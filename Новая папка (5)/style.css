@@ -1,0 +1,200 @@
+/* Umumiy sozlamalar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* HEADER */
+.header {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav a img {
+  height: 40px;
+}
+
+/* MENU */
+.heder__list {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.header__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.header__link:hover {
+  color: #ff6b00;
+}
+
+/* BUTTON & AVATAR */
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__btn {
+  background: #fff;
+  border: 2px solid #ff6b00;
+  color: #ff6b00;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header__btn:hover {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.header__right img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #ff8800;
+  object-fit: cover;
+}
+
+/* SHOP SECTION */
+.shop {
+  padding: 30px 80px;
+}
+
+/* Yuqori qism: sarlavha, qidiruv, tarix */
+.shop__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.shop__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+}
+
+.shop__search {
+  display: flex;
+  align-items: center;
+}
+
+.shop__search input {
+  padding: 8px 14px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  outline: none;
+  width: 200px;
+  background: #000;
+  color: #fff;
+}
+
+.shop__search button {
+  padding: 9px 16px;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.shop__history {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ff8800;
+  font-weight: 600;
+}
+
+/* PRODUCT GRID */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.product {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.price {
+  color: #ff8800;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.stock {
+  font-size: 13px;
+  color: #777;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #555;
+  font-size: 14px;
+  background: #fff;
+  margin-top: 30px;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+}
